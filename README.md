@@ -15,15 +15,16 @@ For Now, we have following modules.
 Inside of each module we will create set of standard .tf files required for implementing basic infrastructure.
 
 
-# product( root modulr)
+# product(root module)
   product module is root module and contains production content and sub-modules.
     
       
-            a. vendoraccess.tf
-            b. terraform.tfvars
-            c. accesskey.tf
-            d. variables.tf
-            e. output.tf
+            a. main.tf 
+            b. vendoraccess.tf
+            c. terraform.tfvars
+            d. accesskey.tf
+            e. variables.tf
+            f. output.tf
             
             securitygroup(sub-module)
             vendoracces(sub-module)
@@ -49,3 +50,9 @@ Inside of each module we will create set of standard .tf files required for impl
      c. accesskey.tf
      d. variables.tf
      e. output.tf
+
+# Main.tf
+   1. Should create a small S3 bucket with filename as name of the project for checking project from CLI
+      $aws s3 ls
+   
+   
