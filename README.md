@@ -51,8 +51,11 @@ Inside of each module we will create set of standard .tf files required for impl
      d. variables.tf
      e. output.tf
 
-# Main.tf
-   1. Should create a small S3 bucket with filename as name of the project for checking project from CLI
-      $aws s3 ls
+# Production folder contents
+  # Main.tf
+    1. Should connect to AWS and perform authentication.
+    2. Should create a small S3 bucket with filename as name of the project for checking project from CLI
+       # $aws s3 ls
+    3. Move your state file ".tfstate" to S3 bucket. Name convention can be project.tfstate
    
    
