@@ -15,15 +15,15 @@ For Now, we have following modules.
 Inside of each module we will create set of standard .tf files required for implementing basic infrastructure.
 
 
-# product(root module)
+# product(root)
   product module is root module and contains production content and sub-modules.
     
       
             a. main.tf 
-            b. vendoraccess.tf
+            b. provider.tf          ✅ 
             c. terraform.tfvars
             d. accesskey.tf
-            e. variables.tf
+            e. variables.tf         ✅ 
             f. output.tf
             
             securitygroup(sub-module)
