@@ -26,8 +26,9 @@ Inside of each module we will create set of standard .tf files required for impl
             e. variables.tf         ✅ 
             f. output.tf
             
-            securitygroup(sub-module)
-            vendoracces(sub-module)
+     
+            securitygroup(module)
+            
             
 
   # 1. Build(sub-module)
