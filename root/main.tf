@@ -4,7 +4,7 @@
 # Provider configuration
 
 module "provider" {
-  source = "./provider.tf"
+  source = "./provider"
 
 }
 
