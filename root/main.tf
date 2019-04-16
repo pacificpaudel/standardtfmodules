@@ -13,8 +13,8 @@ module "provider" {
 # Resource configuration
 
 
-resource "aws_instance" "web-server" {
-    ami = "ami-9bf712f4"
+resource "aws_instance" "server" {
+    ami = "ami-07140bc02c30028bb"
     instance_type="t2.micro"
 
     tags {
