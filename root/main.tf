@@ -3,12 +3,9 @@
 
 # Provider configuration
 
-Provider "aws" 
-{
-  #Instead of defining access in this place place a private key ".pem" file in your laptop and connect.
-  #access_key = "XXXX"
-  #secret_key = "XXXX"
-  region     = "${var.provider}"
+module "provider" {
+  source = "./provider.tf"
+
 }
 
 
