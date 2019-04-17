@@ -19,10 +19,7 @@ resource "aws_instance" "server" {
 }
 
 #create a VPC if you don't want to use defualt otherwise AWS creates a default VPC while creating instances
-module "vpc" {
-  source = "./vpc"
-  
-}
+
 
 module "securitygroup" {
   source = "./securitygroup"

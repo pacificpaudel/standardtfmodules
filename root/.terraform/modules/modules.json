@@ -1,1 +1,1 @@
-{"Modules":[{"Source":"./provider","Key":"1.provider;./provider","Version":"","Dir":".terraform/modules/c03028eee34cfb101a7b50a4a03fe236","Root":""}]}
+{"Modules":[{"Source":"./provider","Key":"1.provider;./provider","Version":"","Dir":".terraform/modules/c03028eee34cfb101a7b50a4a03fe236","Root":""},{"Source":"./vpc","Key":"1.vpc;./vpc","Version":"","Dir":".terraform/modules/9b8beeadd90bcc9ccc6f67aa2b05d5d7","Root":""},{"Source":"./securitygroup","Key":"1.securitygroup;./securitygroup","Version":"","Dir":".terraform/modules/a5406f88807489903780a85689cd1ee9","Root":""}]}

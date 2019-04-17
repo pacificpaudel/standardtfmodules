@@ -1,7 +1,10 @@
-resource "aws_server_security_group" "default" {
-  name="allow http"
-  description="Allow HTTP traffic"
-  vpc_id = "${aws_vpc.web_vpc.id}"
+
+  resource "aws_vpc" "mainvpc" {
+  cidr_block = "10.1.0.0/16"
+}
+  resource "aws_default_security_group" "default" {
+  vpc_id = "${aws_vpc.mainvpc.id}"
+
 
 #incomming traffic
   ingress {
