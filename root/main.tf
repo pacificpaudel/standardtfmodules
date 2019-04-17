@@ -1,10 +1,11 @@
 # for github
 
 # Provider configuration
-
-module "provider" {
-  source = "./provider"
+provider "aws" {
+  region="eu-west-1"
 }
+
+
 
 # Resource configuration
 
