@@ -1,5 +1,5 @@
 #provider configuration
 
 provider "aws" {
-  region = "${var.vendor}"
+  default = "${var.vendor}"
 }
