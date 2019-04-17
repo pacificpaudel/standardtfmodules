@@ -1,26 +1,18 @@
 # for github
 
-
 # Provider configuration
 
 module "provider" {
   source = "./provider"
-
 }
-
-
 
 # Resource configuration
 
-
 resource "aws_instance" "server" {
-    ami = "ami-07140bc02c30028bb"
-    instance_type="t2.micro"
+  ami           = "ami-08935252a36e25f85"
+  instance_type = "t2.micro"
 
-    tags {
-        Name="static-web-server"
-
-        }
+  tags {
+    Name = "static-web-server"
+  }
 }
-
-

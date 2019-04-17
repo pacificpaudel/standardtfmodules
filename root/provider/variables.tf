@@ -1,5 +1,5 @@
 #variables used in root
 
 variable "vendor" {
-    default = "eu-west-1"
+  default = "eu-north-1"
 }
