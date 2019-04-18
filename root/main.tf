@@ -2,6 +2,7 @@
 
 # Provider configuration
 provider "aws" {
+  #changing this will loose complete stack of infrastructure
   region="eu-west-1"
 }
 
@@ -23,6 +24,8 @@ resource "aws_instance" "server" {
 
 module "securitygroup" {
   source = "./securitygroup"
-  
+  #vpc_id="${aws_vpc.my_vpc.id}"
+  #subnet_id="${aws_vpc.my_vpc.id}"
+  #name="name"
 }
 
