@@ -37,20 +37,7 @@ resource "aws_instance" "prod-web" {
 
 
 
-#keypair
-resource "aws_key_pair" "auth" {
-  key_name = "${var.key_name}"
-  public_key = "${file(var.public_key_path)}"
-}
 
 
 
-#User-sample-data
 
-resource "template_file" "web_userdata" {
-  template = "${file("web_userdata.tpl")}"
-
-  vars {
-    domain_name = "testsite"
-  }
-}
