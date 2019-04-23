@@ -1,3 +1,8 @@
+
+
+
+
+
 # for github
 
 # Provider configuration
@@ -9,8 +14,21 @@ provider "aws" {
 
 
 
+module "provisioner" {
+  source = "./provisioner"
+  
+}
+
+resource "template_file" "web_userdata" {
+  template = "${file("web_userdata.tpl")}"
+
+  vars {
+    domain_name = "testsite"
+  }
+}
 # Resource configuration
 resource "aws_instance" "prod-web" {
+  
   count     = 1
   user_data = "${template_file.web_userdata.rendered}"
 

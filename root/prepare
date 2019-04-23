@@ -1,0 +1,3 @@
+$ keyname=the-startup-stack
+$ keymail="devops@the-startup-stack.com"
+$ ssh-keygen -t rsa -b 4096 -f $keyname -C $keymail
