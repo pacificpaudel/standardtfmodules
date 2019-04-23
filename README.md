@@ -18,42 +18,27 @@ Inside of each module we will create set of standard .tf files required for impl
 # product(root)
   product module is root module and contains production content and sub-folders.
     
-            1. main.tf 
-            2. provider.tf          ✅ 
-            3. terraform.tfvars
-            4. accesskey.tf
-            5. variables.tf         ✅ 
-            6. output.tf
-            7. terraform.tfstates   ✅ 
-            
-     
-            securitygroup(module)
+        main.tf
+        variables.tf
+        vpc.tf	
+        sg.tf
+        loadbalancer.tf
+        output.tf
+        userdata.tf	
+        	
+
             
             
 Inside of the product folder there are three sub folders with the naming convention of build, test and production.
 
   # 1. Build(sub-folder)
-     a. vendoraccess.tf
-     b. terraform.tfvars
-     c. accesskey.tf
-     d. variables.tf
-     e. output.tf
+     
 
   # 2. Test(sub-folder)
-     a. vendoraccess.tf
-     b. terraform.tfvars
-     c. accesskey.tf
-     d. variables.tf
-     e. output.tf
+     
 
   # 3. Production(sub-folder)
-       contains the copy of product folder which is root folder.
-     a. vendoraccess.tf
-     b. terraform.tfvars
-     c. accesskey.tf
-     d. variables.tf
-     e. output.tf
-
+       
 
 
 # Production folder contents
