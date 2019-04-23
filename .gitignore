@@ -1,5 +1,0 @@
-**/.terraform/*
-*.tfstate.backup
-*.DS_Store
-keypair.tf
-
